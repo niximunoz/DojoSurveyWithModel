@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <form class="container1" action="/survey" method="POST">
+        <div class="sub-container">
+            <div class="sub-containers">
+                <label for="firstName">Your Name: </label>
+                <label for="location">Dojo Location:</label>
+                <label for="language">Favorite Language:</label>
+                <label for="comments">Comment (optional):</label>
+            </div>
+            <div class="sub-containers">
+                <input type="text" name="FirstName">
+                <select name="Location" id="Location">
+                    <option value="San Jose">San Jose</option>
+                    <option value="Santiago">Santiago</option>
+                </select>
+                <select name="Language" id="language">
+                    <option value="C#">C#</option>
+                    <option value="Python">Python</option>
+                </select>
+            </div>
+        </div>
+        <div class="sub-container">
+            <textarea name="Comments" id="comments" cols="65" rows="10"></textarea>
+        </div>
+        <div class="btn">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
